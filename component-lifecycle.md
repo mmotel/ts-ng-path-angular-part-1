@@ -1,0 +1,1 @@
+# Cykl życia komponentu
