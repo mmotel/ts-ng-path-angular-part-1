@@ -1,14 +1,6 @@
 # Ścieżka TS+NG: Angular Część 1
 
-
-
-
-
 ##### ![](/assets/LOGO_SOLWIT.png)
-
-
-
-
 
 ```js
 {
@@ -19,5 +11,7 @@
 }
 ```
 
-
 ### mmotel.gitbooks.io/ts-ng-path-angular-part-1/content/
+
+
+
