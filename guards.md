@@ -1,1 +1,5 @@
 # Strażnicy (Guards)
+
+## canActivate
+
+## canDeactivate
