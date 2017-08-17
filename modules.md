@@ -31,8 +31,6 @@ Tablica `imports` zawiera moduły, które zostaną zaimportowane do modułu. Sk�
 
 `exports` pozwala na udostępnienie wybranych składników modułu innym, które go zaimportują.
 
-### declarations
-
 ### `providers`
 
 `providers` definiuje serwisy, które zostaną dostarczone do komponentów wewnątrz definiowanego modułu oraz tych modułów, które go zaimportują. 
@@ -40,7 +38,5 @@ Tablica `imports` zawiera moduły, które zostaną zaimportowane do modułu. Sk�
 ### `bootstrap`
 
 `bootstrap` wskazuje komponent, który jest punktem wejściowym aplikacji. Właściwość tą może zawierać tylko jeden moduł w aplikacji - główny, zazwyczaj nazywany `AppModule`. 
-
-### exports
 
 ## CommonModule
