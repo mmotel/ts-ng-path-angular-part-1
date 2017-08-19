@@ -40,3 +40,11 @@ Tablica `imports` zawiera moduły, które zostaną zaimportowane do modułu. Sk�
 `bootstrap` wskazuje komponent, który jest punktem wejściowym aplikacji. Właściwość tą może zawierać tylko jeden moduł w aplikacji - główny, zazwyczaj nazywany `AppModule`. 
 
 ## CommonModule
+
+
+---
+
+##### Źródła
+
+* https://angular.io/guide/bootstrapping
+* https://angular.io/guide/ngmodule
