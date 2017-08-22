@@ -59,6 +59,10 @@ Aplikacja po wydzieleniu `CoreModule` ([github](https://github.com/mmotel/ng-bee
 
 Aplikacja po wydzieleniu `CommonModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v2/src/app)).
 
+Warto również uporządkować elementy współdzielonego modułu. Obecnie wiele z nich powtarza się w tablicach `imports` / `declarations` i `exports`. Pogrupujemy elementy wedle typów do tablic, które następnie wykorzystamy w `imports`, `declatarions` oraz `exports`.
+
+`CommonModule` po uporządkowaniu ([github](https://github.com/mmotel/ng-beers-app/blob/v3/src/app/common/common.module.ts)).
+
 ## FeatureModule
 
 
