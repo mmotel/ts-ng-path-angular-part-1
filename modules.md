@@ -51,11 +51,14 @@ Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja ([github](https://git
 
 Wydzielimy do `CoreModule` elementy, które obecnie znajdują się w `AppModule` aby mógł on pełnić swoją podstawową rolę.
 
-Aplikacja po wydzieleniu `CoreModule` (github).
+Aplikacja po wydzieleniu `CoreModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v1/src/app)).
 
 ## FeatureModule
-
 ## CommonModule
+
+`CommonModule` przechowuje w sobie elementy aplikacji, które są współdzielone przez jej moduły. Dodatkowo importuje i eksportuje moduły, które musielibyśmy importować w wielu miejscach.
+
+## FeatureModule
 
 
 ---
