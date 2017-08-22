@@ -57,6 +57,8 @@ Aplikacja po wydzieleniu `CoreModule` ([github](https://github.com/mmotel/ng-bee
 
 `CommonModule` przechowuje w sobie elementy aplikacji, które są współdzielone przez jej moduły. Dodatkowo importuje i eksportuje moduły, które musielibyśmy importować w wielu miejscach.
 
+https://github.com/mmotel/ng-beers-app/tree/v2/src/app
+
 ## FeatureModule
 
 
