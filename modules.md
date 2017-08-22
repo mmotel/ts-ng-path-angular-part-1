@@ -53,7 +53,6 @@ Wydzielimy do `CoreModule` elementy, które obecnie znajdują się w `AppModule`
 
 Aplikacja po wydzieleniu `CoreModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v1/src/app)).
 
-## FeatureModule
 ## CommonModule
 
 `CommonModule` przechowuje w sobie elementy aplikacji, które są współdzielone przez jej moduły. Dodatkowo importuje i eksportuje moduły, które musielibyśmy importować w wielu miejscach.
