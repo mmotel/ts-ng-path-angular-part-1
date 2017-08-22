@@ -43,7 +43,7 @@ Tablica `imports` zawiera moduły, które zostaną zaimportowane do modułu. Sk�
 
 Moduł główny aplikacji - zazwyczaj nazywany `AppModule` pełni rolę punktu startowego. Jego głównym zadaniem jest definiowane struktury aplikacji poprzez importy oraz routing.
 
-Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja ([github](https://github.com/mmotel/ng-beers-app/tree/v0)). 
+Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja ([github](https://github.com/mmotel/ng-beers-app/tree/v0/src/app)). 
 
 ## CoreModule
 
