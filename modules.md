@@ -39,6 +39,22 @@ Tablica `imports` zawiera moduły, które zostaną zaimportowane do modułu. Sk�
 
 `bootstrap` wskazuje komponent, który jest punktem wejściowym aplikacji. Właściwość tą może zawierać tylko jeden moduł w aplikacji - główny, zazwyczaj nazywany `AppModule`. 
 
+## RootModule
+
+Moduł główny aplikacji - zazwyczaj nazywany `AppModule` pełni rolę punktu startowego. Jego głównym zadaniem jest definiowane struktury aplikacji poprzez importy oraz routing.
+
+Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja ([github](https://github.com/mmotel/ng-beers-app/tree/v0)). 
+
+## CoreModule
+
+`CoreModule` zawiera w sobie podstawowe elementy aplikacji, które zawsze są ładowane podczas jej uruchamiania. 
+
+Wydzielimy do `CoreModule` elementy, które obecnie znajdują się w `AppModule` aby mógł on pełnić swoją podstawową rolę.
+
+Aplikacja po wydzieleniu `CoreModule` (github).
+
+## FeatureModule
+
 ## CommonModule
 
 
