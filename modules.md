@@ -53,15 +53,15 @@ Wydzielimy do `CoreModule` elementy, które obecnie znajdują się w `AppModule`
 
 Aplikacja po wydzieleniu `CoreModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v1/src/app)).
 
-## CommonModule
+## SharedModule
 
-`CommonModule` przechowuje w sobie elementy aplikacji, które są współdzielone przez jej moduły. Dodatkowo importuje i eksportuje moduły, które musielibyśmy importować w wielu miejscach.
+`SharedModule` przechowuje w sobie elementy aplikacji, które są współdzielone przez jej moduły. Dodatkowo importuje i eksportuje moduły, które musielibyśmy importować w wielu miejscach.
 
-Aplikacja po wydzieleniu `CommonModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v2/src/app)).
+Aplikacja po wydzieleniu `SharedModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v2/src/app)).
 
 Warto również uporządkować elementy współdzielonego modułu. Obecnie wiele z nich powtarza się w tablicach `imports` / `declarations` i `exports`. Pogrupujemy elementy wedle typów do tablic, które następnie wykorzystamy w `imports`, `declatarions` oraz `exports`.
 
-`CommonModule` po uporządkowaniu ([github](https://github.com/mmotel/ng-beers-app/blob/v3/src/app/common/common.module.ts)).
+`SharedModule` po uporządkowaniu ([github](https://github.com/mmotel/ng-beers-app/blob/v3/src/app/common/common.module.ts)).
 
 ## FeatureModule
 
