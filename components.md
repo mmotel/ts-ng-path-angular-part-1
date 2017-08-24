@@ -47,6 +47,8 @@ Przyjrzyjmy się komponentowi `BeerDetailsComponent` ([github](https://github.co
 
 ## Dzielenie na komponenty
 
+![](/assets/spliting view into components.png)
+
 ## Interakcje między komponentami
 
 ### input
