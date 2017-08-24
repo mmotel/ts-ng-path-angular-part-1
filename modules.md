@@ -67,6 +67,12 @@ Warto również uporządkować elementy współdzielonego modułu. Obecnie wiele
 
 ## FeatureModule
 
+`FeatureModule` zawiera niezależną część aplikacji - pojedynczą funkcjonalność. Moduły te są zazwyczaj ładowane na żądanie (`lazy loading`) kiedy są potrzebne. W ich kontekście bardzo istotny staje się `SharedModule` ponieważ nie powinny one importować siebie na wzajem a jedynie korzystać ze współdzielonego modułu.
+
+Wraz z rozwojem aplikacji rośne liczba jej funkcjonalności. Natychmiastowe ładowanie wszystkich jej części jest niewydajne i wydłuża czas oczekiwania na uruchomienie aplikacji. Podział na `FeatureModules` pozwala na doładowywanie kolejnych funkcjonalności w razie potrzeby gdy użytkownik będzie chciał z nich skorzystać.
+
+Stworzymy `FeatureModule`, który będzie zawierał funkcjonalność wyświetlania detali losowego piwa.
+
 
 ---
 
