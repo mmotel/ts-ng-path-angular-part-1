@@ -2,6 +2,8 @@
 
 Moduły pomagają podzielić aplikację na funkcjonalne części. 
 
+![](/assets/app modules structure.png)
+
 `NgModule` to klasa udekorowana funkcją `@NgModule`. Przyjmuje ona metadane opisujące w jaki sposób należy zinterpretować i wykonać moduł oraz jego składniki.
 
 ```js
