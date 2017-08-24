@@ -1,5 +1,8 @@
 # Komponenty
 
+![](/assets/component.png)
+`*` - `css` / `less` / `scss`
+ 
 ## Składowe komponentu
 
 ```js
