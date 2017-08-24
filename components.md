@@ -11,16 +11,12 @@ Komponent kontroluje fragment ekranu zwany widokiem. Składa się z trzech podst
 
 ```js
 @Component({
-  selector: 'hero-app',
-  template: `
-    <h1>Tour of Heroes</h1>
-    <hero-app-main [hero]=hero></hero-app-main>`,
-  styles: ['h1 { font-weight: normal; }'],
+  selector: 'app-loading',
+  styleUrls: ['./loading.component.css'],
+  template: `<md-spinner></md-spinner>`,
   providers: []
 })
-export class HeroAppComponent {
-/* . . . */
-}
+export class LoadingComponent {}
 ```
 
 ### selector
