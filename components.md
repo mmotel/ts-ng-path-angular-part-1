@@ -33,9 +33,17 @@ Szablon komponentu można zdefiniować na dwa sposoby. Liniowo - umieszczając g
 
 ### styles / stylesUrl
 
-Podobnie jak szablon tak i style możemy zdefiniować zarówno liniowo jak i w osobnym pliku. Różnica polega na możliwości użycia wielu plików ze stylami. Style komponentu są domy
+Podobnie jak szablon tak i style możemy zdefiniować zarówno liniowo jak i w osobnym pliku. Różnica polega na możliwości użycia wielu plików ze stylami. Style komponentu są domyślnie ograniczone tylko do jego elementów.
+
+Definiując style komponentu mamy do dyspozycji dwa specjalne pseudoelementy - `:host` oraz `:host-context()`. 
+
+`:host` pozwala się odwołać do elementu okalającego zawartość komponentu - nazywa się on tak jak selektor, o ile został zdefiniowany.
+
+`:host-context(.class-name)` pozwala odwołać się do kontekstu elementu okalającego zawartość komponentu i sprawdzić czy na przykład na on nadaną klasę `class-name`.
 
 ### providers
+
+Tablica `providers` definiuje serwisy, które zostaną dostarczone do komponentu podczas jego tworzenia.  
 
 ## Dzielenie na komponenty
 
