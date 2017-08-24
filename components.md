@@ -45,6 +45,10 @@ Definiując style komponentu mamy do dyspozycji dwa specjalne pseudoelementy - `
 
 Tablica `providers` definiuje serwisy, które zostaną dostarczone do komponentu podczas jego tworzenia.  
 
+`- - -`
+
+Przyjrzyjmy się komponentowi `BeerDetailsComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v4/src/app/core/beer-details)).
+
 ## Dzielenie na komponenty
 
 ## Interakcje między komponentami
