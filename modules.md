@@ -73,6 +73,8 @@ Wraz z rozwojem aplikacji rośne liczba jej funkcjonalności. Natychmiastowe ła
 
 Stworzymy `FeatureModule`, który będzie zawierał funkcjonalność wyświetlania detali losowego piwa.
 
+Nasz now moduł - `RandomBeerModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v4/src/app/random-beer)).
+
 
 ---
 
