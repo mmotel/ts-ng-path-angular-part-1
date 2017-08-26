@@ -65,11 +65,28 @@ Podział widoków na komponenty i umieszczanie ich w sobie sprawia iż konieczna
 
 ### input
 
+Pole komponentu udekorowane funkcją `@Input()` pozwala na przekazanie do niego wartości przez rodzica przy użyciu kwadratowych nawiasów `[ ]`.
+
 ### output
+
+Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartości do rodzica przy użyciu okrągłych nawiasów `( )`. Pole to musi być typu [`EventEmitter<T>`](https://angular.io/api/core/EventEmitter).
 
 ### custom two-way binding
 
+Łącząc ze sobą parę `input` - `output` możemy stworzyć własny `two-way binding` - działający tak jak `[(ngModel)]`. Ważną kwestią są w tym przypadku nazwy pól. Pole `output` musi mieć nazwę składającą się z nazwy pola `input` oraz sufiksu `Change`.
+
+```js
+@Input() value: string;
+@Output() valueChange: EventEmitter<string> = new EventEmitter<string>();
+```
+
 ### @ViewChild
+
+Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki temu możemy wywołać jego publiczne metody oraz zyskujemy dostęp do publicznych pól.
+
+```js
+@ViewChild(BeerCardComponent) private beerCard: BeerCardComponent;
+```
 
 ### ng-content
 
