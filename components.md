@@ -61,6 +61,8 @@ Aplikacja po wydzieleniu i wykorzystaniu `BeerCardComponent` ([github](https://g
 
 Podział widoków na komponenty i umieszczanie ich w sobie sprawia iż konieczna staje się komunikacja pomiędzy komponentami.
 
+![](/assets/component interactions part 1.png)
+
 ### input
 
 ### output
