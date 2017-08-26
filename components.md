@@ -55,7 +55,7 @@ W naszym przypadku takim komponentem będzie karta z detalami pojedynczego piwa.
 
 Wydzielimy nasz komponent i wykorzystamy go na widokach detali piwa oraz nowym pokazującym losowe piwo.
 
-Aplikacja po wydzieleniu i wykorzystaniu `BeerCardComponent` ([github]()).
+Aplikacja po wydzieleniu i wykorzystaniu `BeerCardComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v6/src/app)).
 
 ## Interakcje między komponentami
 
