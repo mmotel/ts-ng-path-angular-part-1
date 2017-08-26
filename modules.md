@@ -6,7 +6,7 @@ Moduły pomagają podzielić aplikację na funkcjonalne części.
 
 `NgModule` to klasa udekorowana funkcją `@NgModule`. Przyjmuje ona metadane opisujące w jaki sposób należy zinterpretować i wykonać moduł oraz jego składniki.
 
-```js
+```ts
 @NgModule({
   imports:      [ BrowserModule ],
   declarations: [ AppComponent ],

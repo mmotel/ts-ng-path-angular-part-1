@@ -9,7 +9,7 @@ Komponent kontroluje fragment ekranu zwany widokiem. Składa się z trzech podst
 
 `Component` to klasa udekorowana funkcją `@Component`. Przyjmuje ona metadane opisujące w jaki sposób należy zinterpretować i wyświetlić komponent oraz czego potrzebuje on do działania.
 
-```js
+```ts
 @Component({
   selector: 'app-loading',
   styleUrls: ['./loading.component.css'],
@@ -75,7 +75,7 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 
 Łącząc ze sobą parę `input` - `output` możemy stworzyć własny `two-way binding` - działający tak jak `[(ngModel)]`. Ważną kwestią są w tym przypadku nazwy pól. Pole `output` musi mieć nazwę składającą się z nazwy pola `input` oraz sufiksu `Change`.
 
-```js
+```ts
 @Input() value: string;
 @Output() valueChange: EventEmitter<string> = new EventEmitter<string>();
 ```
@@ -84,7 +84,7 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 
 Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki temu możemy wywołać jego publiczne metody oraz zyskujemy dostęp do publicznych pól.
 
-```js
+```ts
 @ViewChild(BeerCardComponent) private beerCard: BeerCardComponent;
 ```
 
