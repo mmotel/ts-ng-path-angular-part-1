@@ -80,6 +80,8 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 @Output() valueChange: EventEmitter<string> = new EventEmitter<string>();
 ```
 
+PRZYKŁAD: komponent do filtrowania listy piw "na żywo".
+
 ### @ViewChild
 
 Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki temu możemy wywołać jego publiczne metody oraz zyskujemy dostęp do publicznych pól.
@@ -88,11 +90,15 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 @ViewChild(BeerCardComponent) private beerCard: BeerCardComponent;
 ```
 
+PRZYKŁAD: komponent do filtrowania listy piw "na żywo" - metoda setActive po załadowaniu listy piw.
+
 ### ng-content
 
 Podczas tworzenia komponentów zdarza się, że chcemy stworzyć komponent, który stanowi strukturę dla innych i będzie można je wypełnić dowolną treścią. Z pomocą przychodzi nam element `<ng-content>`, który pozwala na umieszczenie w szablonie komponentu zawartości umieszczonej wewnątrz jego tagów (ustalonych przez selektor).
 
 Dobrym przykładem jest `popup`. Stanowi on jedynie _formatkę_, którą następnie, wedle potrzeb, możemy dowolnie wypełnić.  
+
+PRZYKŁAD: lista ulubionych piw - popup potwierdzający usunięcie piwa z ulubionych.
 
 ## Dwa rodzaje komponentów
 
