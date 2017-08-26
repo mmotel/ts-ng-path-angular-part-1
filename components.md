@@ -47,7 +47,13 @@ Przyjrzyjmy się komponentowi `BeerDetailsComponent` \([github](https://github.c
 
 ## Dzielenie na komponenty
 
+Kiedy nasza aplikacja zaczyna się rozrastać pojawiają się miejsca gdzie powtarzają się elementy interfejsu. Warto w takich wypadkach uniknąć redundancji kodu i stworzyć reużywalny komponent.
+
 ![](/assets/spliting view into components.png)
+
+W naszym przypadku takim komponentem będzie karta z detalami pojedynczego piwa.
+
+Wydzielimy nasz komponent i wykorzystamy go na widokach detali piwa oraz nowym pokazującym losowe piwo.
 
 ## Interakcje między komponentami
 
