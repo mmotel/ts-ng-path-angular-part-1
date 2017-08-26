@@ -65,7 +65,11 @@ Wydzielimy nasz komponent i wykorzystamy go na widokach detali piwa oraz nowym p
 
 ### @ViewChild
 
-## ng-content
+### ng-content
+
+## Dwa rodzaje komponentów
+
+Widok vs reużywalny komponent
 
 
 
