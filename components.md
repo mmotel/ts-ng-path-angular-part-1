@@ -90,6 +90,10 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 
 ### ng-content
 
+Podczas tworzenia komponentów zdarza się, że chcemy stworzyć komponent, który stanowi strukturę dla innych i będzie można je wypełnić dowolną treścią. Z pomocą przychodzi nam element `<ng-content>`, który pozwala na umieszczenie w szablonie komponentu zawartości umieszczonej wewnątrz jego tagów (ustalonych przez selektor).
+
+Dobrym przykładem jest `popup`. Stanowi on jedynie _formatkę_, którą następnie, wedle potrzeb, możemy dowolnie wypełnić.  
+
 ## Dwa rodzaje komponentów
 
 Widok vs reużywalny komponent
