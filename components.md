@@ -57,9 +57,9 @@ Przyjrzyjmy się komponentowi `BeerDetailsComponent` \([github](https://github.c
 
 ### custom two-way binding
 
-### ng-content
-
 ### @ViewChild
+
+## ng-content
 
 
 
