@@ -51,15 +51,17 @@ Kiedy nasza aplikacja zaczyna się rozrastać pojawiają się miejsca gdzie powt
 
 ![](/assets/spliting view into components.png)
 
-W naszym przypadku takim komponentem będzie karta z detalami pojedynczego piwa.
+W naszym przypadku takim komponentem będzie karta z detalami pojedynczego piwa (3).
 
 Wydzielimy nasz komponent i wykorzystamy go na widokach detali piwa oraz nowym pokazującym losowe piwo.
 
 Aplikacja po wydzieleniu i wykorzystaniu `BeerCardComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v6/src/app)).
 
+Aby zachować spójność aplikacji wydzielone zostały również komponenty zawierajace nagłówek strony (1) oraz listę piw. Aplikacja po podzieleniu na komponenty ([github](https://github.com/mmotel/ng-beers-app/tree/v7/src/app)).
+
 ## Interakcje między komponentami
 
-Podział widoków na komponenty i umieszczanie ich w sobie sprawia iż konieczna staje się komunikacja pomiędzy komponentami.
+Podział widoków na komponenty i umieszczanie ich w sobie sprawia iż konieczna staje się komunikacja pomiędzy nimi.
 
 ![](/assets/component interactions part 1.png)
 
@@ -105,6 +107,16 @@ PRZYKŁADY: lista ulubionych piw:
 ## Dwa rodzaje komponentów
 
 Widok vs reużywalny komponent
+
+
+---
+
+###### Źródła
+
+* https://angular.io/guide/architecture#components
+* https://angular.io/guide/template-syntax
+* https://angular.io/guide/component-interaction
+* https://angular.io/guide/component-styles
 
 
 
