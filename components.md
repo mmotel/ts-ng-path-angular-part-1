@@ -104,7 +104,7 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 
 `- - -`
 
-
+PRZYKŁAD: komponent do filtrowania listy piw "na żywo" - metoda setActive po załadowaniu listy piw.
 
 ### ng-content
 
