@@ -88,6 +88,8 @@ Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https:/
 @Output() valueChange: EventEmitter<string> = new EventEmitter<string>();
 ```
 
+`- - -`
+
 PRZYKŁAD: refactoring BeersSearchComponentu na CTWB
 
 ### @ViewChild
