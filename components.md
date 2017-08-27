@@ -73,6 +73,12 @@ Pole komponentu udekorowane funkcją `@Input()` pozwala na przekazanie do niego 
 
 Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartości do rodzica przy użyciu okrągłych nawiasów `( )`. Pole to musi być typu [`EventEmitter<T>`](https://angular.io/api/core/EventEmitter).
 
+`- - -`
+
+Aby zademonstrować komunikację za pomocą `input`-ów oraz `output`-ów dodamy możliwość filtrowania po frazie listy piw _na żywo_.
+
+Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v8/src/app)).
+
 ### custom two-way binding
 
 Łącząc ze sobą parę `input` - `output` możemy stworzyć własny `two-way binding` - działający tak jak `[(ngModel)]`. Ważną kwestią są w tym przypadku nazwy pól. Pole `output` musi mieć nazwę składającą się z nazwy pola `input` oraz sufiksu `Change`.
@@ -82,11 +88,7 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 @Output() valueChange: EventEmitter<string> = new EventEmitter<string>();
 ```
 
-`- - -`
-
-Aby zademonstrować komunikację za pomocą `input`-ów oraz `output`-ów dodamy możliwość filtrowania po frazie listy piw _na żywo_.
-
-Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v8/src/app)).
+PRZYKŁAD: refactoring BeersSearchComponentu na CTWB
 
 ### @ViewChild
 
