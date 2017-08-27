@@ -92,7 +92,7 @@ Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https:/
 
 `- - -`
 
-PRZYKŁAD: refactoring BeersSearchComponentu na CTWB
+W łatwy sposób możemy wykorzystać `two-way binding` w `BeersSearchComponent`. Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/blob/v9/src/app)).
 
 ### @ViewChild
 
@@ -104,7 +104,7 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 
 `- - -`
 
-W łatwy sposób możemy wykorzystać `two-way binding` w `BeersSearchComponent`. Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/blob/v9/src/app)).
+
 
 ### ng-content
 
