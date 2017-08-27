@@ -63,7 +63,7 @@ Aby zachować spójność aplikacji wydzielone zostały również komponenty zaw
 
 Podział widoków na komponenty i umieszczanie ich w sobie sprawia iż konieczna staje się komunikacja pomiędzy nimi.
 
-![](/assets/component interactions part 1.png)
+![](/assets/components input output.png)
 
 ### input
 
@@ -78,6 +78,8 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 Aby zademonstrować komunikację za pomocą `input`-ów oraz `output`-ów dodamy możliwość filtrowania po frazie listy piw _na żywo_.
 
 Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v8/src/app)).
+
+![](/assets/componets two-way binding.png)
 
 ### custom two-way binding
 
