@@ -102,7 +102,9 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 @ViewChild(BeerCardComponent) private beerCard: BeerCardComponent;
 ```
 
-PRZYKŁAD: komponent do filtrowania listy piw "na żywo" - metoda setActive po załadowaniu listy piw.
+`- - -`
+
+W łatwy sposób możemy wykorzystać `two-way binding` w `BeersSearchComponent`. Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/blob/v9/src/app)).
 
 ### ng-content
 
