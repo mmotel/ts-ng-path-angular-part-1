@@ -86,7 +86,7 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 
 Aby zademonstrować komunikację za pomocą `input`-ów oraz `output`-ów dodamy możliwość filtrowania po frazie listy piw _na żywo_.
 
-PRZYKŁAD: komponent do filtrowania listy piw "na żywo".
+Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v8/src/app)).
 
 ### @ViewChild
 
