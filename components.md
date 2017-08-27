@@ -114,9 +114,9 @@ Podczas tworzenia komponentów zdarza się, że chcemy stworzyć komponent, któ
 
 Dobrym przykładem jest `popup`. Stanowi on jedynie _formatkę_, którą następnie, wedle potrzeb, możemy dowolnie wypełnić.  
 
-PRZYKŁADY: lista ulubionych piw:
-  (1) customowe akcje listy piw; 
-  (2) popup potwierdzający usunięcie piwa z ulubionych.
+`- - -`
+
+PRZYKŁAD: lista ulubionych piw: popup potwierdzający usunięcie piwa z ulubionych.
 
 ## Dwa rodzaje komponentów
 
