@@ -82,6 +82,10 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 @Output() valueChange: EventEmitter<string> = new EventEmitter<string>();
 ```
 
+`- - -`
+
+Aby zademonstrować komunikację za pomocą `input`-ów oraz `output`-ów dodamy możliwość filtrowania po frazie listy piw _na żywo_.
+
 PRZYKŁAD: komponent do filtrowania listy piw "na żywo".
 
 ### @ViewChild
