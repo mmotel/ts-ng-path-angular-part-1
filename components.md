@@ -106,7 +106,7 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 
 Obecnie wyszukiwanie piw jest aktywne od razu po wyświetleniu widoku nawet kiedy jeszcze nie załadowała się lista piw. Dobrym rozwiązaniem będzie uaktywnianie pola wyszukiwania po załadowaniu danych.
 
-PRZYKŁAD: komponent do filtrowania listy piw "na żywo" - metoda setActive po załadowaniu listy piw.
+Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v10/src/app)).
 
 ### ng-content
 
