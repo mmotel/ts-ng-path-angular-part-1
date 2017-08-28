@@ -122,7 +122,13 @@ Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v16/
 
 ## Dwa rodzaje komponentów
 
-Widok vs reużywalny komponent
+Chociaż podział ten nie istnieje w samym frameworku, w toku prac nad aplikacjami wyróżniłem dwa rodzaje komponentów - widoki oraz reużywalne komponenty.
+
+![](/assets/views vs components.png)
+
+Reużywalne komponenty skupiają się na wyświetlaniu danych oraz obsłudze akcji użytkownika. Przyjmują dane, zajmują się ich obróbką a następnie je wyświetlają.
+
+Widoki są komponentami, które są używane w routingu. Definiują on strukturę widoku przy wykorzystaniu reużywalnych komponentów. Zajmują się również pobieraniem danych potrzebnych do wyświetlenia. Obsługują też komunikację z serwerem podczas obsługi akcji użytkownika.
 
 
 ---
