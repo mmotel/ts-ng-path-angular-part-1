@@ -5,6 +5,8 @@ Komponent kontroluje fragment ekranu zwany widokiem. Składa się z trzech podst
 ![](/assets/component.png)  
 `*` - `css` / `less` / `scss`
 
+Komponenty, obok modułów, są podstawowym elementem budującym aplikację.
+
 ## Składowe komponentu
 
 `Component` to klasa udekorowana funkcją `@Component`. Przyjmuje ona metadane opisujące w jaki sposób należy zinterpretować i wyświetlić komponent oraz czego potrzebuje on do działania.
