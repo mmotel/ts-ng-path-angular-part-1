@@ -112,11 +112,13 @@ Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v10/
 
 Podczas tworzenia komponentów zdarza się, że chcemy stworzyć komponent, który stanowi strukturę dla innych i będzie można je wypełnić dowolną treścią. Z pomocą przychodzi nam element `<ng-content>`, który pozwala na umieszczenie w szablonie komponentu zawartości umieszczonej wewnątrz jego tagów (ustalonych przez selektor).
 
-Dobrym przykładem jest `popup`. Stanowi on jedynie _formatkę_, którą następnie, wedle potrzeb, możemy dowolnie wypełnić.  
-
 `- - -`
 
-PRZYKŁAD: lista ulubionych piw: popup potwierdzający usunięcie piwa z ulubionych.
+Dobrym przykładem jest `popup`. Stanowi on jedynie _formatkę_, którą następnie, wedle potrzeb, możemy dowolnie wypełnić.  
+
+W aplikacji pojawiła się funkcjonalność ulubionych piw. Obecnie usuwanie piw z ulubionych odbywa się bez żadnego potwierdzenia. Łatwo można przypadkowo usunąć ulubione piwo. Dodamy popup z prośbą o potwierdzenie chęci usunięcia ulubionego piwa.
+
+Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v16/src/app)).
 
 ## Dwa rodzaje komponentów
 
