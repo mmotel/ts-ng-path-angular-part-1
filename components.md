@@ -47,7 +47,7 @@ Przyjrzyjmy się komponentowi `BeerDetailsComponent` \([github](https://github.c
 
 ## Dzielenie na komponenty
 
-Kiedy nasza aplikacja zaczyna się rozrastać pojawiają się miejsca gdzie powtarzają się elementy interfejsu. Warto w takich wypadkach uniknąć redundancji kodu i stworzyć reużywalny komponent.
+Kiedy nasza aplikacja zaczyna się rozrastać pojawiają się miejsca gdzie powtarzają się elementy interfejsu. Warto w takich wypadkach uniknąć redundancji kodu i stworzyć reużywalny komponent. Warto aby były one tworzone wedle zasady *SRP* (_ang. single responsibility principle_).
 
 ![](/assets/spliting view into components.png)
 
