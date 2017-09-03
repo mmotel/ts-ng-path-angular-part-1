@@ -14,7 +14,7 @@ Aby podłączyć się do cyklu życia komponentu należy skorzystać z _"uchwyt�
 
 `ngOnInit` pozwala wykonać inicjalizację komponentu kiedy został on stworzony a jego parametry wejściowe zostały już ustawione. 
 
-Najczęściej służy do pobierania parametrów ze ścieżki oraz komunikacji z `api`.
+Najczęściej służy do pobierania parametrów ze ścieżki oraz komunikacji z serwerem.
 
 ## OnChanges
 
@@ -26,6 +26,18 @@ W specyficznych przypadkach `ngOnChanges` może całkowicie zastąpić `ngOninit
 
 ## AfterViewInit
 
+`ngOnChanges` pozwala na wykonanie wykonanie akcji kiedy widok został już wyświetlony.
 
+Bardzo przydatny szczególnie w przypadku dyrektyw kiedy potrzebujemy dostępu do już istniejącego elementu `DOM`.
 
 ## OnDestroy
+
+`ngOnDestroy` służy do _"wyczyszczenia"_ komponentu zanim zostanie od usunięty. 
+
+W tym miejscu zazwyczaj odpinamy dodatkowe `event listener`-y, zakańczamy działanie zewnętrznych bibliotek oraz przerywamy komunikację z serwerem jeśli Angular nie może zrobić tego sam. 
+
+---
+
+##### Źródła
+
+* https://angular.io/guide/lifecycle-hooks#lifecycle-hooks
