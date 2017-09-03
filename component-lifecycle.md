@@ -2,7 +2,7 @@
 
 ## Sekwencja cyklu życia
 
-![](/assets/lifecycle.png)
+![](/assets/lifecycle2.png)
 
 ## OnInit
 
