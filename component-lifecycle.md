@@ -34,7 +34,11 @@ Bardzo przydatny szczególnie w przypadku dyrektyw kiedy potrzebujemy dostępu d
 
 `ngOnDestroy` służy do _"wyczyszczenia"_ komponentu zanim zostanie on usunięty z drzewa `DOM`. 
 
-W tym miejscu zazwyczaj odpinamy dodatkowe `event listener`-y, zakańczamy działanie zewnętrznych bibliotek oraz przerywamy komunikację z serwerem jeśli Angular nie może zrobić tego sam. 
+W tym miejscu zazwyczaj odpinamy dodatkowe `event listener`-y, kończymy działanie zewnętrznych bibliotek oraz przerywamy komunikację z serwerem jeśli Angular nie może zrobić tego sam. 
+
+`- - -`
+
+Przyjrzymy się bliżej `ngOnChanges`. Chcemy aby lista piw była posortowana alfabetycznie wedle nazw. Jednak chcemy sortowanie pzostawić w gestii komponentu wyświetlającego listę. 
 
 ---
 
