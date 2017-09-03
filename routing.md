@@ -1,5 +1,7 @@
 # Routing
 
+## Podstawy
+
 ## Definiowanie ścieżek
 
 ```js
@@ -17,6 +19,8 @@ const appRoutes: Routes = [
   { path: 'hero/:id',      component: HeroDetailComponent },
 ];
 ```
+
+## Parametry opcjonalne / dodatkowe
 
 ## Przekierowania
 
@@ -47,3 +51,8 @@ const appRoutes: Routes = [
 },
 ```
 
+---
+
+###### Źródła
+
+* https://angular.io/guide/router#routing--navigation
