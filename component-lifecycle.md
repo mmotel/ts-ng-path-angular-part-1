@@ -32,7 +32,7 @@ Bardzo przydatny szczególnie w przypadku dyrektyw kiedy potrzebujemy dostępu d
 
 ## OnDestroy
 
-`ngOnDestroy` służy do _"wyczyszczenia"_ komponentu zanim zostanie od usunięty. 
+`ngOnDestroy` służy do _"wyczyszczenia"_ komponentu zanim zostanie on usunięty z drzewa `DOM`. 
 
 W tym miejscu zazwyczaj odpinamy dodatkowe `event listener`-y, zakańczamy działanie zewnętrznych bibliotek oraz przerywamy komunikację z serwerem jeśli Angular nie może zrobić tego sam. 
 
