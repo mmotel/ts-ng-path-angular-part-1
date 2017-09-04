@@ -90,9 +90,21 @@ this._activatedRoute.params.subscribe( (params) => {
 });
 ```
 
-## Parametry opcjonalne / dodatkowe
+## Parametry opcjonalne
 
-PRZYKŁAD: backUrl dla detali piwa gdy wchodzimy z listy ulubionych
+Istnieje oczywiście możliwość dodawania parametrów opcjonalnych do ścieżek. Aby to zrobić należy przekazać do ścieżki obiekt zawierający parametry dodatkowe korzystając z notacji tablicowej.
+
+```ts
+this.additionalParams = {
+  back: '/favourte'
+};
+```
+
+```html
+<a [routerLink]="['/details/', beer.id, additionalParams]">Details</a>
+```
+
+Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v18/src/app)).
 
 ## Przekierowania
 
