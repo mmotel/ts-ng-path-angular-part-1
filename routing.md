@@ -92,7 +92,11 @@ this._activatedRoute.params.subscribe( (params) => {
 
 ## Parametry opcjonalne / dodatkowe
 
+PRZYKŁAD: backUrl dla detali piwa gdy wchodzimy z listy ulubionych
+
 ## Przekierowania
+
+PRZYKŁAD: /random działa tylko raz, zrobić żeby działało cały czas
 
 ```js
 const appRoutes: Routes = [
@@ -113,6 +117,8 @@ const appRoutes: Routes = [
  
 
 ## Lazy loading
+
+PRZYKŁAD: zrobić lazy loading modułów random i favourite 
 
 ```js
 {
