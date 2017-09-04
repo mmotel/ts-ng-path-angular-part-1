@@ -52,20 +52,42 @@ this._router.navigateByUrl('/random');
 
 ## Definiowanie ścieżek
 
+Aby zdefiniować ścieżkę należy zdefiniować obiekt typu `Routes`, który zawiera informacje, który komponent ma zostać załadowany pod wskazanym adresem. Dodatkowo możemy wskazać dodatkowe parametry oraz _strażników_ na wejście oraz wyjście z widoku.
+
 ```js
 const appRoutes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'random', component: RandomBeerComponent },
 ];
 ```
 
+Przykład: [random-beer-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/random-beer/random-beer-routing.module.ts).
 
 ## Parametry
 
+Aby umieścić w adresie parametry należy skorzystać ze składni `:nazwaParametru`.
+
 ```js
 const appRoutes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'hero/:id',      component: HeroDetailComponent },
+  { path: 'details/:id', component: BeerDetailsComponent },
 ];
+```
+
+Dostęp do parametrów z adresu zapewnia globalny serwis `ActivatedRoute` dostarczany przez `RouterModule`.
+
+Najłatwiejszym sposobem jest skorzystanie z obiektu `snapshot`, który zawiera obecny stan aktywnej ścieżki w aplikacji - w tym obiekt `params` przechowujący parametry zawarte w adresie.
+
+```ts
+const beerId: number = +this._activatedRoute.snapshot.params['id'];
+```
+
+Przykład: [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/core/core-routing.module.ts), [beer-details.component.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/core/beer-details/beer-details.component.ts).
+
+Jednak jeśli nasz widok może nawigować sam do siebie zmieniając jedynie parametry w adresie wtedy konieczne będzie skorzystanie z mtody `ActivatedRoute.params`. Zwaraca ona `Observable` pozwalające reagować na zmiany parametrów widoku.
+
+```ts
+this._activatedRoute.params.subscribe( (params) => {
+  const beerId: number = +params['id'];
+});
 ```
 
 ## Parametry opcjonalne / dodatkowe
