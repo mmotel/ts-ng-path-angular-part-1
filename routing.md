@@ -108,25 +108,15 @@ Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v18/
 
 ## Przekierowania
 
-PRZYKŁAD: /random działa tylko raz, zrobić żeby działało cały czas
+Mamy również możliwość przekierowania jednej ścieżki na drugą. Aby to zrobić należy zdefiniować ścieżkę w następujący sposób:
 
-```js
-const appRoutes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'hero/:id',      component: HeroDetailComponent },
-  {
-    path: 'heroes',
-    component: HeroListComponent,
-    data: { title: 'Heroes List' }
-  },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PageNotFoundComponent }
-];
+```ts
+{path: '', redirectTo: '/list', pathMatch: 'full'}
 ```
- 
+
+Powyższa definicja mówi: przekieruj (dokładnie) ścieżkę `/` na `/list`.
+
+Przykład: [app-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v19/src/app/app-routing.module.ts), [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v19/src/app/core/core-routing.module.ts).
 
 ## Lazy loading
 
