@@ -122,7 +122,7 @@ Przykład: [app-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v
 
 ## Lazy loading
 
-![](/assets/lazy loading.png)
+![](/assets/lazy loading 2.png)
 
 PRZYKŁAD: zrobić lazy loading modułów random i favourite 
 
