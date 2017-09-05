@@ -2,6 +2,8 @@
 
 `Router` pozwala na nawigację pomiędzy widokami gdy użytkownik wykonuje akcje. 
 
+![](/assets/routing.png)
+
 ## Podstawy
 
 Aby móc skorzystać z `Router`-a należy dodać do aplikacji kilka elementów.
