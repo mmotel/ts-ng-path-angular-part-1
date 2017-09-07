@@ -122,16 +122,36 @@ Przykład: [app-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v
 
 ## Lazy loading
 
+Nasza aplikacja do uruchomienia potrzebuje załadować widoki listy oraz detali piwa. Większość użytkowników od razu trafia na jeden z tych widoków. Pozostałe mogą zostać przez nich nigdy nie odwiedzone. Pomimo tego są one ładowane od razu podczas startu aplikacji. Możemy to zmienić stosując leniwe ładowanie modułów.
+
 ![](/assets/lazy loading 2.png)
 
-PRZYKŁAD: zrobić lazy loading modułów random i favourite 
+Aby załadować moduł leniwie należy zmodyfikować definicje ścieżek. 
 
-```js
-{
-  path: 'admin',
-  loadChildren: 'app/admin/admin.module#AdminModule',
-},
+```ts
+// random-beer-routing.module.ts
+const routes: Routes = [
+  {path: '', component: RandomBeerComponent}
+];
+
+// app-routing.module.ts
+const APP_ROUTES = [
+  // ...
+  { 
+    path: 'favourite', 
+    loadChildren: 'app/favourite/favourite.module#FavouriteModule' 
+  },
+  // ...
+];
+
 ```
+
+
+`- - -`
+
+Przerobimy naszą aplikację tak aby ładowała `RandomBeerModule` oraz `FavouriteModule` dopiero kiedy użytkownik będzie chciał odwiedzić jeden z widoków, które one dostarczają.
+
+Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v20/src/app)).
 
 ---
 
