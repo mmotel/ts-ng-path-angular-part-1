@@ -20,13 +20,17 @@ const routes: Routes = [
     canActivate: [ IsAdultGuard ]
   }
 ];
-
-
 ```
 
-PRZYKŁAD: pilnowanie czy osoba jest pełnoletnia
+Implementacja `canActivate` musi zwracać wartość `true` lub `false`. Może to zrobić synchronicznie lub asynchronicznie poprzez `Promise` czy też `Observable`. Może też dokonać nawigacji, która również spowoduje przerwanie nawigacji podobnie jak zwrócenie wartości `false`.
+
+Przykłady: is-adult.guard.ts, random-beer-routing.module.ts
 
 ## canDeactivate
+
+Nasza aplikacja zyskała nową funkcjonalność - możliwość dodawania komentarzy do piw na widoku detali piwa. Obecnie po dodaniu komentarza możemy opuścić widok bez zapisywania. Nie jest to najlepsze zachowanie z punktu widzenia użytkownika. Należy dodać zabezpieczenie przed opuszczeniem widoku bez zapisywania zmian.
+
+Strażnik `canDeactivate` służy do kontrolowania możliwości opuszczenia widoku.
 
 ![](/assets/canDeactivate 2.png)
 
