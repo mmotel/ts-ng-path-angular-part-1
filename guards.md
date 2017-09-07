@@ -22,7 +22,7 @@ const routes: Routes = [
 ];
 ```
 
-Implementacja `canActivate` musi zwracać wartość `true` lub `false`. Może to zrobić synchronicznie lub asynchronicznie poprzez `Promise` czy też `Observable`. Może też dokonać nawigacji, która również spowoduje przerwanie nawigacji podobnie jak zwrócenie wartości `false`.
+Implementacja `canActivate` powinna zwracać wartość `true` lub `false`. Może to zrobić synchronicznie lub asynchronicznie poprzez `Promise` czy też `Observable`. Może też dokonać nawigacji, która również spowoduje przerwanie nawigacji podobnie jak zwrócenie wartości `false`.
 
 Przykłady: is-adult.guard.ts, random-beer-routing.module.ts
 
