@@ -41,6 +41,8 @@ Strażnik `canDeactivate` służy do kontrolowania możliwości opuszczenia wido
 
 ![](/assets/canDeactivate 2.png)
 
+Przykłady: core-routing.module.ts, core/beer-details.module.ts, can-deactivate.guard.ts
+
 PRZYKŁAD: dodawanie notatek do piw - pilnowanie wyjścia bez zapisu
 
 ---
