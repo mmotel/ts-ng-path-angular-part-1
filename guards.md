@@ -7,7 +7,6 @@ W obu tych problemach z pomocą przychodzą nam strażnicy (_ang. guards_). Stra
 Implementacja strażnika powinna zwracać wartość `true` lub `false`. Może to zrobić synchronicznie lub asynchronicznie poprzez `Promise` czy też `Observable`. 
 
 Gdy zwrócona zostanie wartość:
-
  * `true` - nawigacja będzie kontynuowana,
  * `false` - nawigacja zostanie zatrzymana i użytkownik pozostaje "na miejscu".
 
