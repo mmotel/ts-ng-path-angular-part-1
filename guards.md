@@ -9,7 +9,7 @@ Implementacja strażnika powinna zwracać wartość `true` lub `false`. Może to
 Gdy zwrócona zostanie wartość:
 
  * `true` - nawigacja będzie kontynuowana,
- * `false` - nawigacja zostanie zatrzymana i użytkownik pozostaje na widoku
+ * `false` - nawigacja zostanie zatrzymana i użytkownik pozostaje "na miejscu".
 
 ## canActivate
 
