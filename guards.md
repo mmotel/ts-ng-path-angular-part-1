@@ -4,6 +4,13 @@ W naszej aplikacji obecnie na każdy widok może wejść dowolny użytkownik. Po
 
 W obu tych problemach z pomocą przychodzą nam strażnicy (_ang. guards_). Strażnik odpowiada za kontrolę możliwości wejścia oraz wyjścia z widoku. Można powiedzieć, że ustawiamy strażników na ścieżkach do oraz z widoku.
 
+Implementacja strażnika powinna zwracać wartość `true` lub `false`. Może to zrobić synchronicznie lub asynchronicznie poprzez `Promise` czy też `Observable`. 
+
+Gdy zwrócona zostanie wartość:
+
+ * `true` - nawigacja będzie kontynuowana,
+ * `false` - nawigacja zostanie zatrzymana i użytkownik pozostaje na widoku
+
 ## canActivate
 
 Prezentujemy piwa oraz ich szczegóły. Nie są to treści, które powinny być dostępne dla każdego - w szczególności dla osób niepełnoletnich. Przydałoby się zabezpieczyć widoki w naszej aplikacji przed nieuprawnionym dostępem.
@@ -22,7 +29,7 @@ const routes: Routes = [
 ];
 ```
 
-Implementacja `canActivate` powinna zwracać wartość `true` lub `false`. Może to zrobić synchronicznie lub asynchronicznie poprzez `Promise` czy też `Observable`. Może też dokonać nawigacji, która również spowoduje przerwanie nawigacji podobnie jak zwrócenie wartości `false`.
+Poza zwracaniem wartości `true/false` strażnik `canActivate` może też dokonać nawigacji, która spowoduje przerwanie nawigacji podobnie jak zwrócenie wartości `false`.
 
 Przykłady: is-adult.guard.ts, random-beer-routing.module.ts
 
@@ -35,3 +42,9 @@ Strażnik `canDeactivate` służy do kontrolowania możliwości opuszczenia wido
 ![](/assets/canDeactivate 2.png)
 
 PRZYKŁAD: dodawanie notatek do piw - pilnowanie wyjścia bez zapisu
+
+---
+
+###### Źródła
+
+* https://angular.io/guide/router#milestone-5-route-guards
