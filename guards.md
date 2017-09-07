@@ -1,4 +1,4 @@
-# Strażnicy (Guards)
+# Strażnicy
 
 W naszej aplikacji obecnie na każdy widok może wejść dowolny użytkownik. Podobnie sytuacja wygląda z opuszczaniem widoków. Można wyjść z widoków mając niezapisane zmiany. 
 

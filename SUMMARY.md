@@ -5,4 +5,4 @@
 * [2. Komponenty](components.md)
 * [3. Cykl życia komponentu](component-lifecycle.md)
 * [4. Routing](routing.md)
-* [5. Strażnicy (Guards)](guards.md)
+* [5. Strażnicy](guards.md)
