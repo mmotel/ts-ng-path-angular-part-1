@@ -45,7 +45,7 @@ Tablica `providers` definiuje serwisy, które zostaną dostarczone do komponentu
 
 `- - -`
 
-Przyjrzyjmy się komponentowi `BeerDetailsComponent` \([github](https://github.com/mmotel/ng-beers-app/tree/v4/src/app/core/beer-details)\).
+Przyjrzyjmy się komponentowi `BeerDetailsComponent` `v4` ([github](https://github.com/mmotel/ng-beers-app/tree/v4/src/app/core/beer-details)).
 
 ## Dzielenie na komponenty
 
@@ -57,9 +57,9 @@ W naszym przypadku takim komponentem będzie karta z detalami pojedynczego piwa 
 
 Wydzielimy nasz komponent i wykorzystamy go na widokach detali piwa oraz nowym pokazującym losowe piwo.
 
-Aplikacja po wydzieleniu i wykorzystaniu `BeerCardComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v6/src/app)).
+Aplikacja po wydzieleniu i wykorzystaniu `BeerCardComponent` `v6` ([github](https://github.com/mmotel/ng-beers-app/tree/v6/src/app)).
 
-Aby zachować spójność aplikacji wydzielone zostały również komponenty zawierajace nagłówek strony (1) oraz listę piw. Aplikacja po podzieleniu na komponenty ([github](https://github.com/mmotel/ng-beers-app/tree/v7/src/app)).
+Aby zachować spójność aplikacji wydzielone zostały również komponenty zawierajace nagłówek strony (1) oraz listę piw. Aplikacja po podzieleniu na komponenty `v7` ([github](https://github.com/mmotel/ng-beers-app/tree/v7/src/app)).
 
 ## Interakcje między komponentami
 
@@ -79,7 +79,7 @@ Pole komponentu udekorowane funkcją `@Output()` pozwala na przekazanie wartośc
 
 Aby zademonstrować komunikację za pomocą `input`-ów oraz `output`-ów dodamy możliwość filtrowania po frazie listy piw _na żywo_.
 
-Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https://github.com/mmotel/ng-beers-app/tree/v8/src/app)).
+Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` `v8` ([github](https://github.com/mmotel/ng-beers-app/tree/v8/src/app)).
 
 ![](/assets/componets two-way binding.png)
 
@@ -94,7 +94,7 @@ Aplikacja po stworzeniu i wykorzystaniu `BeersSearchComponent` ([github](https:/
 
 `- - -`
 
-W łatwy sposób możemy wykorzystać `two-way binding` w `BeersSearchComponent`. Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/blob/v9/src/app)).
+W łatwy sposób możemy wykorzystać `two-way binding` w `BeersSearchComponent`. Aplikacja po zmianach `v9` ([github](https://github.com/mmotel/ng-beers-app/blob/v9/src/app)).
 
 ### @ViewChild
 
@@ -108,7 +108,7 @@ Dekorator `@ViewChild` pozwala uzyskać _uchwyt_ do komponentu dziecka. Dzięki 
 
 Obecnie wyszukiwanie piw jest aktywne od razu po wyświetleniu widoku nawet kiedy jeszcze nie załadowała się lista piw. Dobrym rozwiązaniem będzie uaktywnianie pola wyszukiwania po załadowaniu danych.
 
-Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v10/src/app)).
+Aplikacja po zmianach `v10` ([github](https://github.com/mmotel/ng-beers-app/tree/v10/src/app)).
 
 ### ng-content
 
@@ -118,9 +118,9 @@ Podczas tworzenia komponentów zdarza się, że chcemy stworzyć komponent, któ
 
 Dobrym przykładem jest `popup`. Stanowi on jedynie _formatkę_, którą następnie, wedle potrzeb, możemy dowolnie wypełnić.  
 
-W aplikacji pojawiła się funkcjonalność ulubionych piw ([github](https://github.com/mmotel/ng-beers-app/tree/v15/src/app)). Obecnie usuwanie piw z ulubionych odbywa się bez żadnego potwierdzenia. Łatwo można przypadkowo usunąć ulubione piwo. Dodamy popup z prośbą o potwierdzenie chęci usunięcia ulubionego piwa.
+W aplikacji pojawiła się funkcjonalność ulubionych piw `v15` ([github](https://github.com/mmotel/ng-beers-app/tree/v15/src/app)). Obecnie usuwanie piw z ulubionych odbywa się bez żadnego potwierdzenia. Łatwo można przypadkowo usunąć ulubione piwo. Dodamy popup z prośbą o potwierdzenie chęci usunięcia ulubionego piwa.
 
-Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v16/src/app)).
+Aplikacja po zmianach `v16` ([github](https://github.com/mmotel/ng-beers-app/tree/v16/src/app)).
 
 ## Dwa rodzaje komponentów
 
