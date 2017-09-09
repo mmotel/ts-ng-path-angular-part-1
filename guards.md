@@ -34,7 +34,7 @@ Aplikacja po zmianach `v21` ([github](https://github.com/mmotel/ng-beers-app/tre
 
 ## canDeactivate
 
-Nasza aplikacja zyskała nową funkcjonalność - możliwość dodawania komentarzy do piw na widoku detali piwa `v22` ([github](TODO)). Obecnie po dodaniu komentarza możemy opuścić widok bez zapisywania. Nie jest to najlepsze zachowanie z punktu widzenia użytkownika. Należy dodać zabezpieczenie przed opuszczeniem widoku bez zapisywania zmian.
+Nasza aplikacja zyskała nową funkcjonalność - możliwość dodawania komentarzy do piw na widoku detali piwa `v22` ([github](https://github.com/mmotel/ng-beers-app/tree/v22/src/app)). Obecnie po dodaniu komentarza możemy opuścić widok bez zapisywania. Nie jest to najlepsze zachowanie z punktu widzenia użytkownika. Należy dodać zabezpieczenie przed opuszczeniem widoku bez zapisywania zmian.
 
 Strażnik `canDeactivate` służy do kontrolowania możliwości opuszczenia widoku.
 
