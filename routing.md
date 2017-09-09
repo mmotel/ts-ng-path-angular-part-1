@@ -62,7 +62,7 @@ const appRoutes: Routes = [
 ];
 ```
 
-Przykład: [random-beer-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/random-beer/random-beer-routing.module.ts).
+Przykład: `v17` [random-beer-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/random-beer/random-beer-routing.module.ts).
 
 ## Parametry
 
@@ -82,7 +82,7 @@ Najłatwiejszym sposobem jest skorzystanie z obiektu `snapshot`, który zawiera 
 const beerId: number = +this._activatedRoute.snapshot.params['id'];
 ```
 
-Przykład: [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/core/core-routing.module.ts), [beer-details.component.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/core/beer-details/beer-details.component.ts).
+Przykład: `v17` [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/core/core-routing.module.ts), [beer-details.component.ts](https://github.com/mmotel/ng-beers-app/blob/v17/src/app/core/beer-details/beer-details.component.ts).
 
 Jednak jeśli nasz widok może nawigować sam do siebie zmieniając jedynie parametry w adresie wtedy konieczne będzie skorzystanie z mtody `ActivatedRoute.params`. Zwaraca ona `Observable` pozwalające reagować na zmiany parametrów widoku.
 
@@ -106,7 +106,7 @@ this.additionalParams = {
 <a [routerLink]="['/details/', beer.id, additionalParams]">Details</a>
 ```
 
-Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v18/src/app)).
+Aplikacja po zmianach `v18` ([github](https://github.com/mmotel/ng-beers-app/tree/v18/src/app)).
 
 ## Przekierowania
 
@@ -118,7 +118,7 @@ Mamy również możliwość przekierowania jednej ścieżki na drugą. Aby to zr
 
 Powyższa definicja mówi: przekieruj (dokładnie) ścieżkę `/` na `/list`.
 
-Przykład: [app-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v19/src/app/app-routing.module.ts), [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v19/src/app/core/core-routing.module.ts).
+Przykład: `v19` [app-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v19/src/app/app-routing.module.ts), [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v19/src/app/core/core-routing.module.ts).
 
 ## Lazy loading
 
@@ -151,7 +151,7 @@ const APP_ROUTES = [
 
 Przerobimy naszą aplikację tak aby ładowała `RandomBeerModule` oraz `FavouriteModule` dopiero kiedy użytkownik będzie chciał odwiedzić jeden z widoków, które one dostarczają.
 
-Aplikacja po zmianach ([github](https://github.com/mmotel/ng-beers-app/tree/v20/src/app)).
+Aplikacja po zmianach `v20` ([github](https://github.com/mmotel/ng-beers-app/tree/v20/src/app)).
 
 ---
 
