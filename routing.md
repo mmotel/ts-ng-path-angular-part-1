@@ -1,4 +1,4 @@
-# Routing
+# Nawigacja
 
 `Router` pozwala na nawigację pomiędzy widokami gdy użytkownik wykonuje akcje. 
 
