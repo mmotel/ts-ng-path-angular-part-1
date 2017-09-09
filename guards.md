@@ -30,7 +30,7 @@ const routes: Routes = [
 
 Poza zwracaniem wartości `true/false` strażnik `canActivate` może też dokonać nawigacji, która spowoduje przerwanie nawigacji podobnie jak zwrócenie wartości `false`.
 
-Przykłady: is-adult.guard.ts, random-beer-routing.module.ts
+Aplikacja po zmianach `v21` ([github](https://github.com/mmotel/ng-beers-app/tree/v21/src/app)).
 
 ## canDeactivate
 
