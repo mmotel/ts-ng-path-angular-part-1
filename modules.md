@@ -45,7 +45,7 @@ Tablica `imports` zawiera moduły, które zostaną zaimportowane do modułu. Sk�
 
 Moduł główny aplikacji - zazwyczaj nazywany `AppModule` pełni rolę punktu startowego. Jego głównym zadaniem jest definiowane struktury aplikacji poprzez importy oraz routing.
 
-Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja ([github](https://github.com/mmotel/ng-beers-app/tree/v0/src/app)). 
+Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja `v0` ([github](https://github.com/mmotel/ng-beers-app/tree/v0/src/app)). 
 
 ## CoreModule
 
@@ -53,17 +53,17 @@ Przyjrzyjmy się temu jak obecnie wygląda nasza aplikacja ([github](https://git
 
 Wydzielimy do `CoreModule` elementy, które obecnie znajdują się w `AppModule` aby mógł on pełnić swoją podstawową rolę.
 
-Aplikacja po wydzieleniu `CoreModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v1/src/app)).
+Aplikacja po wydzieleniu `CoreModule` `v1` ([github](https://github.com/mmotel/ng-beers-app/tree/v1/src/app)).
 
 ## SharedModule
 
 `SharedModule` przechowuje w sobie elementy aplikacji, które są współdzielone przez jej moduły. Dodatkowo importuje i eksportuje moduły, które musielibyśmy importować w wielu miejscach.
 
-Aplikacja po wydzieleniu `SharedModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v2/src/app)).
+Aplikacja po wydzieleniu `SharedModule``v2` ([github](https://github.com/mmotel/ng-beers-app/tree/v2/src/app)).
 
 Warto również uporządkować elementy współdzielonego modułu. Obecnie wiele z nich powtarza się w tablicach `imports` / `declarations` i `exports`. Pogrupujemy elementy wedle typów do tablic, które następnie wykorzystamy w `imports`, `declatarions` oraz `exports`.
 
-`SharedModule` po uporządkowaniu ([github](https://github.com/mmotel/ng-beers-app/blob/v3/src/app/common/common.module.ts)).
+`SharedModule` po uporządkowaniu `v3` ([github](https://github.com/mmotel/ng-beers-app/blob/v3/src/app/common/common.module.ts)).
 
 ## FeatureModule
 
@@ -73,7 +73,7 @@ Wraz z rozwojem aplikacji rośne liczba jej funkcjonalności. Natychmiastowe ła
 
 Stworzymy `FeatureModule`, który będzie zawierał funkcjonalność wyświetlania detali losowego piwa.
 
-Nasz now moduł - `RandomBeerModule` ([github](https://github.com/mmotel/ng-beers-app/tree/v4/src/app/random-beer)).
+Nasz now moduł - `RandomBeerModule` `v4` ([github](https://github.com/mmotel/ng-beers-app/tree/v4/src/app/random-beer)).
 
 
 ---
