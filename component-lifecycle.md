@@ -40,7 +40,7 @@ W tym miejscu zazwyczaj odpinamy dodatkowe `event listener`-y, kończymy działa
 
 Przyjrzymy się bliżej `ngOnChanges`. Chcemy aby lista piw była posortowana alfabetycznie wedle nazw. Jednak chcemy sortowanie pzostawić w gestii komponentu wyświetlającego listę. 
 
-`BeersListComponent` uwzględniający sortowanie ([github](https://github.com/mmotel/ng-beers-app/tree/v17/src/app/shared/beers-list)).
+`BeersListComponent` uwzględniający sortowanie `v17` ([github](https://github.com/mmotel/ng-beers-app/tree/v17/src/app/shared/beers-list)).
 
 ---
 
