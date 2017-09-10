@@ -20,7 +20,7 @@ git checkout v0
 ng serve
 ```
 
-Aplikacja jest podzielona na kroki oznaczone tagami. 
+Aplikacja jest podzielona na kroki oznaczone tagami. W trakcie tego szkolenia przyjrzymy się następującym tagom:
 
 ```
 v0              basic app version
@@ -34,18 +34,12 @@ v7              app splited into components
 v8              Inputs and Outputs
 v9              custom two-way binding
 v10             ViewChild
-v11             LocalStorageService
-v12             FavouriteModule
-v13             FavouriteBeerService
-v14             adding favourite beers
-v15             removing favourite beers
 v16             ng-content
 v17             OnChanges
 v18             additional route params
 v19             redirect route
 v20             lazy loading
 v21             CanActivate guard
-v22             adding beers notes
 v23             CanDeactivate guard
 ```
 
