@@ -40,9 +40,37 @@ Strażnik `canDeactivate` służy do kontrolowania możliwości opuszczenia wido
 
 ![](/assets/canDeactivate 2.png)
 
-Przykłady: core-routing.module.ts, core/beer-details.module.ts, can-deactivate.guard.ts
+```ts
+const routes: Routes = [
+  // ...,
+  {
+    path: 'details/:id',
+    component: BeerDetailsComponent,
+    canActivate: [IsAdultGuard],
+    canDeactivate: [CanDeactivateGuard]
+  }
+];
+```
 
-PRZYKŁAD: `v23` dodawanie notatek do piw - pilnowanie wyjścia bez zapisu
+W przeciwieństwie do `CanActivate`, `CanDeactivate` większość swojego działania przekazuje do komponentu, który to decyduje czy można go opuścić. W związku z tym istnieje dymo
+
+```ts
+export interface CanComponentDeactivate {
+ canDeactivate: () => Observable<boolean> | Promise<boolean> | boolean;
+}
+
+
+@Injectable()
+export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate> {
+
+  canDeactivate(component: CanComponentDeactivate) {
+    return component.canDeactivate ? component.canDeactivate() : true;
+  }
+  
+}
+```
+
+Przykłady: `v23` [core-routing.module.ts](https://github.com/mmotel/ng-beers-app/blob/v23/src/app/core/core-routing.module.ts), [core/beer-details.component.ts](https://github.com/mmotel/ng-beers-app/blob/v23/src/app/core/beer-details/beer-details.component.ts), [can-deactivate.guard.ts](https://github.com/mmotel/ng-beers-app/blob/v23/src/app/shared/guard/can-deactivate/can-deactivate.guard.ts)
 
 ---
 
