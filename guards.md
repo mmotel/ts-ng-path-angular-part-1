@@ -52,7 +52,7 @@ const routes: Routes = [
 ];
 ```
 
-W przeciwieństwie do `CanActivate`, `CanDeactivate` większość swojego działania przekazuje do komponentu, który to decyduje czy można go opuścić. W związku z tym istnieje domyślna (zalecana) implementacja tego strażnika.
+W przeciwieństwie do `CanActivate`, `CanDeactivate` większość swojego działania przekazuje do komponentu, który decyduje czy można go opuścić. W związku z tym istnieje domyślna (zalecana) implementacja tego strażnika.
 
 ```ts
 export interface CanComponentDeactivate {
