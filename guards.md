@@ -52,7 +52,7 @@ const routes: Routes = [
 ];
 ```
 
-W przeciwieństwie do `CanActivate`, `CanDeactivate` większość swojego działania przekazuje do komponentu, który to decyduje czy można go opuścić. W związku z tym istnieje dymo
+W przeciwieństwie do `CanActivate`, `CanDeactivate` większość swojego działania przekazuje do komponentu, który to decyduje czy można go opuścić. W związku z tym istnieje domyślna (zalecana) implementacja tego strażnika.
 
 ```ts
 export interface CanComponentDeactivate {
@@ -61,7 +61,8 @@ export interface CanComponentDeactivate {
 
 
 @Injectable()
-export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate> {
+export class CanDeactivateGuard 
+  implements CanDeactivate<CanComponentDeactivate> {
 
   canDeactivate(component: CanComponentDeactivate) {
     return component.canDeactivate ? component.canDeactivate() : true;
