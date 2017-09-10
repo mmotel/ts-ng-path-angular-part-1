@@ -28,7 +28,6 @@ v1              core module
 v2              shared module
 v3              organized shared module
 v4              random beer module
-v5              getRandomBeer method
 v6              extract reusable BeerCardComponent
 v7              app splited into components
 v8              Inputs and Outputs
